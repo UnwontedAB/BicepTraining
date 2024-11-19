@@ -1,2 +1,2 @@
 # BicepTraining
-Lab material for Bicep training
+Lab material for Unwonted's Bicep training sessions.
