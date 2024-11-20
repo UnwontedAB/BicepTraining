@@ -8,9 +8,6 @@ param location string
 ])
 param sku string
 
-@minValue(7)
-param softDeleteRetentionInDays int
-
 resource vaults 'Microsoft.KeyVault/vaults@2022-07-01' = {
   name: name
   location: location
@@ -25,7 +22,7 @@ resource vaults 'Microsoft.KeyVault/vaults@2022-07-01' = {
     enabledForTemplateDeployment: true
     enabledForDiskEncryption: false
     enableSoftDelete: true
+    softDeleteRetentionInDays: 7
     enablePurgeProtection: true
-    softDeleteRetentionInDays: softDeleteRetentionInDays
   }
 }
