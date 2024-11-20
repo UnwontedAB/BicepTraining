@@ -1,4 +1,4 @@
-# Lab 3: Using module to share code
+# Lab 3: Using modules to share code
 
 In this lab you will create your first Bicep module.
 
