@@ -16,3 +16,8 @@ Below are the steps performed during this lab.
 - Create an Azure Container Registry
 - Publish the module to the ACR
 - Edit `main.bicep` to consume the module from registry
+
+## Lab steps (Mandatory)
+
+Follow the steps below to code a great module for sharing with colleagues.
+
