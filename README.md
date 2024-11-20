@@ -1,4 +1,4 @@
-# BicepTraining
+# Bicep Training
 Material for Unwonted's Bicep training sessions.
 
 ## Introduction to Bicep
