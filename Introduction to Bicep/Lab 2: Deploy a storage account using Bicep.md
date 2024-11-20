@@ -57,6 +57,6 @@ Now it's time to make your template re-usable by adding parameters to it and cre
 4. Select `bicepparam` as the parameter file format.
 ![Parameter format](.images/lab2-parameters-format.png)
 5. Select `All Parameters` when prompted for which parameters to include.
-![Parameter to include](.images/lab2-parameters-to-include.png.png)
+![Parameter to include](.images/lab2-parameters-to-include.png)
 6. Open the `storage.bicepparams` file, add values to your parameters.
 7. Deploy the template again but this time using your `storage.bicepparams` file.
