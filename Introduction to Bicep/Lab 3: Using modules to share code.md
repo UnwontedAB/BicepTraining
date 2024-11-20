@@ -49,3 +49,17 @@ module keyVault './keyVault.bicep' = {
 5. Save the `main.bicep` file.
 6. Deploy `main.bicep` to Azure using VS Code.
 7. Navigate to the Azure Portal and verify that the Key Vault is successfully deployed.
+
+## Lab steps (Optional)
+
+Modules can be shared within an organization using a Bicep registry. Follow the steps below to publish a module to a registry.
+
+1. Deploy an Azure Container Registry (ACR) using the template [containerRegistry.bicep](https://github.com/UnwontedAB/BicepTraining/blob/main/Introduction%20to%20Bicep/templates/conatinerRegistry.bicep).
+1. Open up a terminal window and sign-in to Azure using Azure CLI, `az login`
+1. A browser window will open, sign-in using your Azure account
+1. A list of Azure subscriptions will be presented. Select the Azure subscription where your Azure Container Registry is deployed by entering the number representing the subscription.
+1. Publish your module to the container registry using the command: `az bicep publish --file keyVault.bicep --target br:<name of your registry>.azurecr.io/bicep/modules/keyvault:v1 --with-source`.
+1. Navigate to the Azure Container Registry in the Azure Portal, click on `Repositories` and verify that you can find the published module.
+1. Head back to VS Code, and open `main.bicep` in the editor.
+1. Update the module declaration to consume the module from the registry instead of the local `keyVault.bicep` file.
+1. Deploy the `main.bicep` file to Azure.
