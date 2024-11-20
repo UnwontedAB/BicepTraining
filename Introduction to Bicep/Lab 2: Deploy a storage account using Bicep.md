@@ -16,6 +16,13 @@ Below are the steps performed during this lab.
 - Generate a parameter file
 - Re-deploy the template using a parameter file
 
+### Documentation
+
+You can find documentation to help you with this lab here:
+
+- [Bicep syntax](https://learn.microsoft.com/azure/azure-resource-manager/bicep/file)
+- [Deploy Bicep Files from Visual Studio Code](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deploy-vscode)
+
 ## Lab steps (Mandatory)
 
 Follow the steps below to author a template and deploy a Storage Account to Azure.
